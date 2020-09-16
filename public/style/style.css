@@ -1,0 +1,81 @@
+html {
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient(#BF0449, #024873);
+  background-repeat: no-repeat;
+}
+html body {
+  margin: 1.2rem;
+}
+html body .aboutme {
+  font-size: 1rem;
+}
+html body .aboutme h1 {
+  font-size: 2.81rem;
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+}
+html body .aboutme article {
+  font-size: 1.35rem;
+  font-weight: lighter;
+}
+html body .competences h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+}
+html body .competences h2 {
+  font-size: 1.8rem;
+  font-variant: small-caps;
+}
+html body .competences article {
+  text-align: left;
+  font-size: 1.35rem;
+  font-weight: lighter;
+}
+html body .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+html body .container h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+}
+html body .container .--name {
+  font-size: 1.8rem;
+  font-variant: small-caps;
+  text-align: center;
+}
+html body .container .--description {
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+html body .container .--techs {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+@media only screen and (max-width: 900px) {
+  html body .--image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 2px 2px black;
+  }
+}
+@media only screen and (min-width: 900px) {
+  html body .--image {
+    max-width: 880px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 2px 2px black;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

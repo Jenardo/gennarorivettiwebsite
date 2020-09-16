@@ -1,0 +1,112 @@
+html {
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient((#BF0449, #024873));
+    background-repeat: no-repeat;
+
+    body {
+        
+        // Body styling section, for consistent in margin and colors
+
+        margin: 1.2rem;
+
+        // AboutMe only section, styling.
+        .aboutme {
+            font-size: 1rem;
+
+            h1 {
+                font-size: 2.81rem;
+                font-weight: bold;
+                text-align: center;
+                font-variant: small-caps;
+            }
+
+            article {
+                font-size: 1.35rem;
+                font-weight: lighter;
+            }
+        }
+
+        // Competences section
+
+        .competences {
+
+            h1 {
+                font-size: 2.20rem;
+                font-weight: bold;
+                text-align: center;
+                font-variant: small-caps;
+            }
+
+            h2 {
+                font-size: 1.80rem;
+                font-variant: small-caps;
+            }
+
+            article {
+                text-align: left;
+                font-size: 1.35rem;
+                font-weight: lighter;
+            }
+
+        }
+
+        .container {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            h1 {
+                font-size: 2.20rem;
+                font-weight: bold;
+                text-align: center;
+                font-variant: small-caps;
+            }
+
+            .--name{
+                font-size: 1.80rem;
+                font-variant: small-caps;
+                text-align: center;
+            }
+
+            .--description{
+                text-align: left;
+                font-size: 1.10rem;
+                font-weight: lighter;
+            }
+
+            .--techs{
+                font-size: 1rem;
+                font-weight: lighter;
+            }
+
+        }
+
+        // Small screen adapt
+        @media only screen and (max-width: 900px){
+
+            .--image{
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 4px 2px 2px black;
+            }
+
+        }
+
+        // Big screen adapting 
+
+        @media only screen and (min-width: 900px){
+
+            .--image{
+                max-width: 880px;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 4px 2px 2px black;
+            }
+        }
+
+    }
+}
