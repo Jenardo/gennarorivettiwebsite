@@ -35,34 +35,23 @@ html body .competences article {
   font-size: 1.35rem;
   font-weight: lighter;
 }
-html body .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+html body .project {
+  margin: 2.5rem;
 }
-html body .container h1 {
+html body .project h1 {
   font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   font-variant: small-caps;
 }
-html body .container .--name {
-  font-size: 1.8rem;
-  font-variant: small-caps;
-  text-align: center;
-}
-html body .container .--description {
-  text-align: left;
-  font-size: 1.1rem;
-  font-weight: lighter;
-}
-html body .container .--techs {
-  font-size: 1rem;
-  font-weight: lighter;
+html body .project .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 3rem;
 }
 @media only screen and (max-width: 900px) {
-  html body .--image {
+  html body .project .container .--image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -70,12 +59,40 @@ html body .container .--techs {
   }
 }
 @media only screen and (min-width: 900px) {
-  html body .--image {
-    max-width: 880px;
-    height: auto;
+  html body .project .container .--image {
+    width: 860px;
+    height: 550px;
     border-radius: 10px;
     box-shadow: 4px 2px 2px black;
   }
+}
+html body .project .container .--detail .--name {
+  text-align: center;
+  font-size: 1.8rem;
+  font-variant: small-caps;
+}
+html body .project .container .--detail .--description {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+html body .project .container .--detail .--techs {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+html body .contacts {
+  margin: 3rem 2rem 2rem auto;
+}
+html body .contacts .--hyperlinks {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+html body .contacts .--hyperlinks img {
+  width: 18vw;
+  height: 18vw;
+  margin: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

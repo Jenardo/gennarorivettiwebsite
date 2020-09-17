@@ -5,6 +5,7 @@ import React from "react"
 import AboutMe from "./components/aboutme"
 import Competences from "./components/competences"
 import Projects from "./components/project"
+import Contacts from "./components/contacts"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <AboutMe />
         <Competences />
         <Projects />
+        <Contacts />
         </div>
     );
 

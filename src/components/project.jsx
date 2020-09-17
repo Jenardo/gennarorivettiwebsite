@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Grid, Row, Col } from 'react-flexbox-grid'
 
 var axios = require('axios')
 var config = {
@@ -35,15 +34,16 @@ class Projects extends Component {
     render() {
         const { projects } = this.state
         return(
-            <div  className="container">
-                <h1> Projects developed <br></br></h1>
+            <div className="project">
+                <h1> Projects developed</h1>
                 {
                     projects.length ?
                     projects.map(project => 
-                    <div className="project-card" key={project.name} >
+                    <div key={project.name} className="container">
                         <br></br>
                         <br></br>
                         <img className="--image" src={project.image} alt="WRONG PATH"></img>
+                        <div className="--detail">
                         <h2 className="--name">{project.name}</h2>
                         <article className="--description">{project.description}</article>
                         <ul className="--techs">
@@ -53,6 +53,7 @@ class Projects extends Component {
                             <li style={{display: project.tech[3] ? "" : "none"}}>{project.tech[3]}</li>
                             <li style={{display: project.tech[4] ? "" : "none"}}>{project.tech[4]}</li>
                         </ul>
+                        </div>
                         <br></br>
                     </div>
                         ) :

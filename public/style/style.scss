@@ -51,12 +51,9 @@ html {
 
         }
 
-        .container {
+        .project {
 
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
+            margin: 2.5rem;
 
             h1 {
                 font-size: 2.20rem;
@@ -65,46 +62,79 @@ html {
                 font-variant: small-caps;
             }
 
-            .--name{
-                font-size: 1.80rem;
-                font-variant: small-caps;
-                text-align: center;
-            }
+            .container {
 
-            .--description{
-                text-align: left;
-                font-size: 1.10rem;
-                font-weight: lighter;
-            }
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: 3rem;
 
-            .--techs{
-                font-size: 1rem;
-                font-weight: lighter;
+                // Small screen adapt
+                @media only screen and (max-width: 900px){
+        
+                    .--image{
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                        box-shadow: 4px 2px 2px black;
+                    }
+    
+                }
+    
+                // Big screen adapting 
+                @media only screen and (min-width: 900px){
+    
+                    .--image{
+                        width: 860px;
+                        height: 550px;
+                        border-radius: 10px;
+                        box-shadow: 4px 2px 2px black;
+                    }
+                }
+
+                .--detail {
+
+                    .--name{
+                        text-align: center;
+                        font-size: 1.80rem;
+                        font-variant: small-caps;
+                    }
+        
+                    .--description{
+                        text-align: left;
+                        font-size: 1.50rem;
+                        font-weight: lighter;
+                    }
+        
+                    .--techs{
+                        font-size: 1.20rem;
+                        font-weight: lighter;
+                    }
+
+                }
+
+                
+    
             }
 
         }
 
-        // Small screen adapt
-        @media only screen and (max-width: 900px){
+        .contacts {
 
-            .--image{
-                max-width: 100%;
-                height: auto;
-                border-radius: 10px;
-                box-shadow: 4px 2px 2px black;
-            }
+            margin: 3rem 2rem 2rem auto;
 
-        }
+            .--hyperlinks {
 
-        // Big screen adapting 
+                margin-top: 2.5rem;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
 
-        @media only screen and (min-width: 900px){
-
-            .--image{
-                max-width: 880px;
-                height: auto;
-                border-radius: 10px;
-                box-shadow: 4px 2px 2px black;
+                img {
+                    width: 18vw;
+                    height: 18vw;
+                    margin: 1.8rem;
+                }
             }
         }
 
