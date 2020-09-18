@@ -9,9 +9,8 @@ function Contacts() {
             <a href="https://t.me/gennarorivetti"><img src="./assets/telegram.png" alt="Wrong path."></img></a>
             <a href="https://github.com/Jenardo"><img src="./assets/github.png" alt="Wrong path."></img></a>
             </div>
-            <div className="--hyperlinks">
-                <p id="Copyright">© 2020 Copyright: GennaroRivetti.surge.sh</p>
-                <a href="mailto:gennarorivetti00@gmail.com" id="Mail">gennarorivetti00@gmail.com</a>
+            <div className="--hyperlinks-mail">
+                <a href="mailto:gennarorivetti00@gmail.com" id="Mail"><p>gennarorivetti00@gmail.com</p></a>
             </div>
         </div>
     );

@@ -136,6 +136,22 @@ html {
                     margin: 1.8rem;
                 }
             }
+
+            .--hyperlinks-mail {
+
+                margin-top: 1.5rem;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+
+                p {
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    font-variant: small-caps;
+                }
+
+            }
         }
 
     }

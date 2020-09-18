@@ -94,5 +94,17 @@ html body .contacts .--hyperlinks img {
   height: 18vw;
   margin: 1.8rem;
 }
+html body .contacts .--hyperlinks-mail {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+html body .contacts .--hyperlinks-mail p {
+  color: white;
+  font-size: 2rem;
+  font-weight: lighter;
+  font-variant: small-caps;
+}
 
 /*# sourceMappingURL=style.css.map */
