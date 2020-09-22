@@ -2,7 +2,7 @@ import React from "react"
 
 function AboutMe(){
     return(
-        <div className="aboutme">
+        <div id="AboutMe" className="aboutme">
         <h1>Gennaro Rivetti</h1>
             <article>
                 <p>Hi, I'm Gennaro Rivetti, from Caserta.</p>

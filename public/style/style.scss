@@ -1,8 +1,7 @@
 html {
     font-size: 16px;
     color: white;
-    background-image: linear-gradient((#BF0449, #024873));
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, #164028 0%, #1B593C 100%);
 
     body {
         
@@ -37,6 +36,7 @@ html {
             }
 
             h2 {
+                color:whitesmoke;
                 font-size: 1.80rem;
                 font-variant: small-caps;
             }
@@ -129,8 +129,8 @@ html {
                 justify-content: center;
 
                 img {
-                    width: 18vw;
-                    height: 18vw;
+                    width: 12vw;
+                    height: 12vw;
                     margin: 1.8rem;
                 }
             }
@@ -140,17 +140,30 @@ html {
                 margin-top: 1.5rem;
                 display: flex;
                 flex-flow: row nowrap;
-                justify-content: center;
+                justify-content: flex-end;
 
-                p {
-                    color: white;
-                    font-size: 2rem;
+                .Mail {
+                    text-decoration: none;
+                    color: #D9C382;
+                    font-size: 1.5rem;
                     font-weight: lighter;
                     font-variant: small-caps;
                 }
-
+                
             }
         }
 
     }
+}
+
+// Scroll Bar 
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  
+::-webkit-scrollbar-track {
+    background: #D9C382; 
 }

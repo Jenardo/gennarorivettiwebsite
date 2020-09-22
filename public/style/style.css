@@ -1,14 +1,16 @@
 html {
   font-size: 16px;
   color: white;
-  background-image: linear-gradient(#BF0449, #024873);
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #164028 0%, #1B593C 100%);
 }
-
+html body {
+  margin: 1.2rem;
+}
 html body .aboutme {
   font-size: 1rem;
 }
 html body .aboutme h1 {
+  color: #D9C382;
   font-size: 2.81rem;
   font-weight: bold;
   text-align: center;
@@ -19,12 +21,14 @@ html body .aboutme article {
   font-weight: lighter;
 }
 html body .competences h1 {
+  color: #D9C382;
   font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   font-variant: small-caps;
 }
 html body .competences h2 {
+  color: whitesmoke;
   font-size: 1.8rem;
   font-variant: small-caps;
 }
@@ -37,6 +41,7 @@ html body .project {
   margin: 2.5rem;
 }
 html body .project h1 {
+  color: #D9C382;
   font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
@@ -65,6 +70,7 @@ html body .project .container {
   }
 }
 html body .project .container .--detail .--name {
+  color: #D9C382;
   text-align: center;
   font-size: 1.8rem;
   font-variant: small-caps;
@@ -88,21 +94,30 @@ html body .contacts .--hyperlinks {
   justify-content: center;
 }
 html body .contacts .--hyperlinks img {
-  width: 18vw;
-  height: 18vw;
+  width: 12vw;
+  height: 12vw;
   margin: 1.8rem;
 }
 html body .contacts .--hyperlinks-mail {
   margin-top: 1.5rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
-html body .contacts .--hyperlinks-mail p {
-  color: white;
-  font-size: 2rem;
+html body .contacts .--hyperlinks-mail .Mail {
+  text-decoration: none;
+  color: #D9C382;
+  font-size: 1.5rem;
   font-weight: lighter;
   font-variant: small-caps;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #D9C382;
 }
 
 /*# sourceMappingURL=style.css.map */

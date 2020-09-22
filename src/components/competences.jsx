@@ -2,7 +2,7 @@ import React from "react"
 
 function Competences() {
     return (
-        <div className="competences">
+        <div id="Competences" className="competences">
             <h1>Competences and Skills</h1>
             <ul>
                 <li>

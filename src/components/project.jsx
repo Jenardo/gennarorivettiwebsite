@@ -34,7 +34,7 @@ class Projects extends Component {
     render() {
         const { projects } = this.state
         return(
-            <div className="project">
+            <div id="Project" className="project">
                 <h1> Projects developed</h1>
                 {
                     projects.length ?
