@@ -2,15 +2,17 @@ import ReactDOM from "react-dom"
 import React from "react"
 
 // Import aboutme section
-import AboutMe from "./components/aboutme"
-import Competences from "./components/competences"
-import Projects from "./components/project"
-import Contacts from "./components/contacts"
+import Navbar from "./components/navbar/Navbar"
+import AboutMe from "./components/AboutMe"
+import Competences from "./components/Competences"
+import Projects from "./components/Project"
+import Contacts from "./components/Contacts"
 
 
 function App() {
     return (
         <div>
+        <Navbar />
         <AboutMe />
         <Competences />
         <Projects />

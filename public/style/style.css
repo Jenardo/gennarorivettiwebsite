@@ -4,9 +4,7 @@ html {
   background-image: linear-gradient(#BF0449, #024873);
   background-repeat: no-repeat;
 }
-html body {
-  margin: 1.2rem;
-}
+
 html body .aboutme {
   font-size: 1rem;
 }

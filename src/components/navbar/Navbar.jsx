@@ -1,18 +1,29 @@
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems"
+import './Navbar.css'
 
 class Navbar extends Component {
+    state = { clicked: false }
+
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked})
+    }
+
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="Navbar-logo">React</h1>
-                <div className="Menu-icon">
-                    
+                
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul>
+                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                            <li><a className={item.cName} href={item.url}>{item.title}</a></li>
+                            <li key={index}>
+                                <a className={item.cName} href={item.url}>
+                                    {item.title}
+                                </a>
+                            </li>
                         )
                     })}
                 </ul>
@@ -22,3 +33,5 @@ class Navbar extends Component {
 }
 
 export default Navbar
+
+//<h2 className="Navbar-logo">DEV<span role="img" aria-label="pc-emoji">💻</span></h2>
